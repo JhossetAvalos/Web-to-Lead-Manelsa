@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Manelsa</title>
+  <link rel="stylesheet" href="https://manelsa.com.pe/wp-content/themes/manelsa/style.css">
+  <link rel="stylesheet" href="https://manelsa.com.pe/wp-content/themes/manelsa/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body { font-family: 'Roboto', sans-serif; background: #f8f9fa; margin: 0; }
+
+    /* Layout */
+    .contacto-wrapper {
+      display: flex;
+      max-width: 1200px;
+      margin: 50px auto;
+      gap: 40px;
+      padding: 20px;
+    }
+    .info {
+      flex: 1;
+    }
+    .info h3 { color: #143f94; margin-bottom: 20px; }
+    .info p { margin: 12px 0; line-height: 1.6; }
+    .info a { color: #143f94; margin-right: 10px; font-size: 20px; }
+
+    /* Card del formulario */
+    .form-card {
+      flex: 1;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .form-card h3 {
+      text-align: center;
+      color: #143f94;
+      margin-bottom: 25px;
+      border-bottom: 2px solid #143f94;
+      padding-bottom: 10px;
+    }
+
+    /* Campos */
+    .form-row {
+      display: flex;
+      gap: 15px;
+    }
+    .form-group {
+      flex: 1;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .form-group i {
+      position: absolute;
+      left: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #999;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 12px 12px 40px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    /* Footer del formulario */
+    .form-footer {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .form-footer input { margin-right: 6px; }
+
+    /* Botón */
+    .form-submit {
+      width: 100%;
+      background: #143f94;
+      color: #fff;
+      border: none;
+      padding: 14px;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+    .form-submit:hover { background: #0f2e6a; }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .contacto-wrapper { flex-direction: column; }
+    }
+    /* Ajustes para centrar y contener bien el formulario */
+  .form-card form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    height:min-content;
+    box-sizing: border-box;
+    max-height: 100px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .form-footer {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .form-footer label {
+    font-size: 14px;
+    color: #333;
+  }
+
+  .form-submit {
+    width: 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+  </style>
+</head>
+<body>
+
+  <!-- Cabecera -->
+  <header>
+    <div class="nav_desk">
+      <div class="container">
+        <div class="nav_desk_logo">
+          <a href="https://manelsa.com.pe/">
+            <img src="https://manelsa.com.pe/wp-content/uploads/2020/04/logo.svg" alt="Manelsa" width="200">
+          </a>
+        </div>
+        <div class="nav_desk_menu">
+          <ul>
+            <li><a href="https://manelsa.com.pe/empresa/">Nosotros</a></li>
+            <li><a href="https://manelsa.com.pe/sucursales/">Sucursales</a></li>
+            <li><a href="https://manelsa.com.pe/marcas/">Marcas</a></li>
+            <li><a href="https://manelsa.com.pe/proyectos/">Proyectos</a></li>
+            <li><a href="https://manelsa.com.pe/catalogo/">Catálogos</a></li>
+            <li><a href="https://manelsa.com.pe/contacto/" class="active">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <section class="contacto-wrapper">
+    <!-- Info izquierda -->
+    <div class="info">
+      <h3>Contáctanos</h3>
+      <p><strong>Ventas Lima</strong><br>Tel: (511) 619-6200<br>Email: ventas@manelsa.com.pe</p>
+      <p><strong>Ventas Arequipa</strong><br>Tel: (51) 981366297<br>Email: ventas.arequipa@manelsa.com.pe</p>
+      <p><strong>Ventas Piura</strong><br>Tel: (51) 946208113<br>Email: ventas.piura@manelsa.com.pe</p>
+      <p><strong>Capacitación</strong><br>Tel: (511) 619-6200 Ext. 419<br>Email: khidalgo@manelsa.com.pe</p>
+
+      <h3>Redes Sociales</h3>
+      <p>
+        <a href="https://www.facebook.com/Manelsa/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/manelsaoficial/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/manelsa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/channel/UCCCOejiSRQjCFEwhslS4S-Q" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@manelsaoficial" target="_blank"><i class="fab fa-tiktok"></i></a>
+      </p>
+    </div>
+
+    <!-- Formulario derecha -->
+    <div class="form-card">
+      <h3>Escríbenos</h3>
+      <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00DW4000006OxUv" method="POST">
+        <input type="hidden" name="oid" value="00DW4000006OxUv">
+        <input type="hidden" name="retURL" value="https://manelsa.com.pe/">
+
+        <div class="form-row">
+          <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input id="first_name" name="first_name" placeholder="Nombre *" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-user"></i>
+            <input id="last_name" name="last_name" placeholder="Apellido *" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <i class="fas fa-envelope"></i>
+            <input id="email" name="email" type="email" placeholder="Email *" required>
+          </div>
+          <div class="form-group">
+            <i class="fas fa-phone"></i>
+            <input id="mobile" name="mobile" placeholder="Teléfono *" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <i class="fas fa-building"></i>
+            <input id="company" name="company" placeholder="Empresa">
+          </div>
+          <div class="form-group">
+            <i class="fas fa-briefcase"></i>
+            <input id="title" name="title" placeholder="Cargo">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <i class="fas fa-map-marker-alt"></i>
+          <input id="city" name="city" placeholder="Departamento">
+        </div>
+
+        <div class="form-group">
+          <i class="fas fa-comment"></i>
+          <textarea name="description" placeholder="Asunto / Mensaje *" required></textarea>
+        </div>
+
+        <div class="form-footer">
+          <input type="checkbox" required> Acepto las Políticas de Privacidad y Términos y Condiciones
+        </div>
+
+        <button type="submit" class="form-submit"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <footer style="background:#143f94; color:#fff; padding:20px; text-align:center;">
+    <p>© 2025 Manelsa - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
