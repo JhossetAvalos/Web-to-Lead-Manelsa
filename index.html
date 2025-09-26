@@ -7,123 +7,112 @@
   <link rel="stylesheet" href="https://manelsa.com.pe/wp-content/themes/manelsa/responsive.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
-    body { font-family: 'Roboto', sans-serif; background: #f8f9fa; margin: 0; }
-
-    /* Layout */
-    .contacto-wrapper {
-      display: flex;
-      max-width: 1200px;
-      margin: 50px auto;
-      gap: 40px;
-      padding: 20px;
-    }
-    .info {
-      flex: 1;
-    }
-    .info h3 { color: #143f94; margin-bottom: 20px; }
-    .info p { margin: 12px 0; line-height: 1.6; }
-    .info a { color: #143f94; margin-right: 10px; font-size: 20px; }
-
-    /* Card del formulario */
-    .form-card {
-      flex: 1;
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    .form-card h3 {
-      text-align: center;
-      color: #143f94;
-      margin-bottom: 25px;
-      border-bottom: 2px solid #143f94;
-      padding-bottom: 10px;
-    }
-
-    /* Campos */
-    .form-row {
-      display: flex;
-      gap: 15px;
-    }
-    .form-group {
-      flex: 1;
-      margin-bottom: 15px;
-      position: relative;
-    }
-    .form-group i {
-      position: absolute;
-      left: 12px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: #999;
-    }
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 12px 12px 40px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-    }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      width: 100%;
-      padding: 12px 12px 12px 40px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 14px;
-      appearance: none; /* 👈 hace que el select se vea más uniforme */
-      background-color: #fff;
-    }
-    
-    /* Footer del formulario */
-    .form-footer {
-      margin-top: 10px;
-      font-size: 14px;
-    }
-    .form-footer input { margin-right: 6px; }
-
-    /* Botón */
-    .form-submit {
-      width: 100%;
-      background: #143f94;
-      color: #fff;
-      border: none;
-      padding: 14px;
-      font-weight: bold;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 15px;
-      transition: background 0.3s;
-    }
-    .form-submit:hover { background: #0f2e6a; }
-
-    /* Responsive */
-    @media(max-width: 900px) {
-      .contacto-wrapper { flex-direction: column; }
-    }
-    /* Ajustes para centrar y contener bien el formulario */
-  .form-card form {
-    max-width: 100%;
-    margin: 0 auto;
+  body { 
+    font-family: 'Roboto', sans-serif; 
+    background: #f8f9fa; 
+    margin: 0; 
   }
 
+  /* Layout general */
+  .contacto-wrapper {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    gap: 40px;
+    padding: 20px;
+  }
+
+  .info {
+    flex: 1;
+  }
+
+  .info h3 { 
+    color: #143f94; 
+    margin-bottom: 20px; 
+  }
+
+  .info p { 
+    margin: 12px 0; 
+    line-height: 1.6; 
+  }
+
+  .info a { 
+    color: #143f94; 
+    margin-right: 10px; 
+    font-size: 20px; 
+  }
+
+  /* Card del formulario */
+  .form-card {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  .form-card h3 {
+    text-align: center;
+    color: #143f94;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #143f94;
+    padding-bottom: 10px;
+  }
+
+  /* Filas de campos */
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .form-group {
+    flex: 1;
+    margin-bottom: 15px;
+    position: relative;
+  }
+
+  /* Íconos en campos */
+  .form-group i {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+  }
+
+  /* Campos de formulario (input, select y textarea) */
   .form-group input,
+  .form-group select,
   .form-group textarea {
     width: 100%;
-    height:min-content;
+    padding: 12px 12px 12px 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
-    max-height: 100px;
+    background-color: #fff;
     line-height: 1.5;
-    font-family: 'Arial', sans-serif;
   }
 
+  /* Ajuste específico del textarea */
+  .form-group textarea {
+    resize: none;
+    height: 80px;   /* 👈 Ajusta aquí el tamaño del campo mensaje */
+    max-height: 120px;
+  }
+
+  /* Footer del formulario */
   .form-footer {
     display: flex;
     align-items: center;
     gap: 8px;
     margin-top: 15px;
+    font-size: 14px;
+  }
+
+  .form-footer input { 
+    margin-right: 6px; 
   }
 
   .form-footer label {
@@ -131,12 +120,30 @@
     color: #333;
   }
 
+  /* Botón enviar */
   .form-submit {
     width: 100%;
+    background: #143f94;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s;
     display: block;
-    margin: 20px auto 0 auto;
   }
-  </style>
+
+  .form-submit:hover { 
+    background: #0f2e6a; 
+  }
+
+  /* Responsive */
+  @media(max-width: 900px) {
+    .contacto-wrapper { flex-direction: column; }
+  }
+</style>
 </head>
 <body>
 
@@ -264,6 +271,7 @@
 
 </body>
 </html>
+
 
 
 
