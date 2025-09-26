@@ -59,90 +59,73 @@
     padding-bottom: 10px;
   }
 
-  /* Filas de campos */
-  .form-row {
-    display: flex;
-    gap: 15px;
-  }
+ /* Grupos de campos */
+.form-group {
+  flex: 1;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0 10px;
+  background: #fff;
+}
 
-  .form-group {
-    flex: 1;
-    margin-bottom: 15px;
-    position: relative;
-  }
+/* Ícono */
+.form-group i {
+  color: #999;
+  margin-right: 8px;
+  font-size: 16px;
+}
 
-  /* Íconos en campos */
-  .form-group i {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #999;
-  }
+/* Inputs, selects y textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px;
+  background: transparent;
+  box-sizing: border-box;
+  max-height: 100px;
+}
 
-  /* Campos de formulario (input, select y textarea) */
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 12px 12px 12px 40px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
-    background-color: #fff;
-    line-height: 1.5;
-  }
+/* Textarea */
+.form-group textarea {
+  resize: none;
+  height: 80px; /* 👈 ajusta aquí la altura */
+  line-height: 1.4;
+}
 
-  /* Ajuste específico del textarea */
-  .form-group textarea {
-    resize: none;
-    height: 80px;   /* 👈 Ajusta aquí el tamaño del campo mensaje */
-    max-height: 120px;
-  }
+/* Para que el select se vea uniforme */
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 
-  /* Footer del formulario */
-  .form-footer {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-top: 15px;
-    font-size: 14px;
-  }
+/* Botón */
+.form-submit {
+  width: 100%;
+  background: #143f94;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s;
+  display: block;
+}
 
-  .form-footer input { 
-    margin-right: 6px; 
-  }
+.form-submit:hover {
+  background: #0f2e6a;
+}
 
-  .form-footer label {
-    font-size: 14px;
-    color: #333;
-  }
-
-  /* Botón enviar */
-  .form-submit {
-    width: 100%;
-    background: #143f94;
-    color: #fff;
-    border: none;
-    padding: 14px;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: background 0.3s;
-    display: block;
-  }
-
-  .form-submit:hover { 
-    background: #0f2e6a; 
-  }
-
-  /* Responsive */
-  @media(max-width: 900px) {
-    .contacto-wrapper { flex-direction: column; }
-  }
 </style>
 </head>
 <body>
@@ -226,7 +209,7 @@
           </div>
           <div class="form-group">
             <i class="fas fa-briefcase"></i>
-            <select id="00NW4000002r4U9" name="00NW4000002r4U9" title="FUNCION" required>
+            <select id="00NW4000002r4U9" name="00NW4000002r4U9" title="Cargo" placeholder="Cargo" required>
               <option value="">--Ninguno--</option>
               <option value="RESIDENTE">RESIDENTE</option>
               <option value="TECNICO ELECTRICISTA">TECNICO ELECTRICISTA</option>
